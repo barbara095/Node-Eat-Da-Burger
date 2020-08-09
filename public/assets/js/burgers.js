@@ -1,29 +1,28 @@
 // This file attaches event handlers to our buttons
 
 $(function () {
-    $('.change-eaten').on('click', function (event) {
+    // Adding event listener to change devoured state
+    $('.eat-burger').on('click', function (event) {
       var id = $(this).data('id');
-      var newDevoured = $(this).data('devoured');
-      var newDevouredState = {
+      
+      var newDevState = {
         devoured: 1,
       };
-  
       // Send the PUT request.
       $.ajax('/api/burgers/' + id, {
         type: 'PUT',
-        data: newDevouredState,
+        data: newDevState,
       }).then(function () {
         // Reload the page to get the updated list
         location.reload();
       });
       console.log(id);
-      console.log(this);
     });
   
+    // Adding event listener on submit button, and posting new burger data
     $('.create-form').on('submit', function (event) {
-      // Make sure to preventDefault on a submit event.
       event.preventDefault();
-      console.log('click');
+
       var newBurger = {
         burger_name: $('#inlineFormInput').val().trim(),
         devoured: 0,
@@ -39,9 +38,11 @@ $(function () {
         location.reload();
       });
     });
-  
+
+    // Adding event listener on delete button, and deleting respective burger
     $('.delete-burger').on('click', function (event) {
       event.preventDefault();
+
       var id = $(this).data('id');
       console.log(id);
       // Send the DELETE request.

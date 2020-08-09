@@ -9,7 +9,6 @@ if (process.env.JAWSDB_URL) {
         user: "d8zkfy48pwmcu8vb",
         password: "ykd7eh7hw5lucp22",
         database: "ppheh43iaics6qe2"
-
     });
 };
 connection.connect(function (err) {

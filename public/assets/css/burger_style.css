@@ -1,4 +1,30 @@
 .body {
-    background-color: rgb(11, 42, 100);
+    cursor: url("https://illustoon.com/photo/4728.png");
 }
 
+.jumbotron {
+    background-image: url("../img/leo.png");
+    background-size: cover;
+    overflow: hidden;
+    min-height: 300px;
+    padding-top: 15%;
+}
+
+.burger-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 65px;
+    color: rgb(250, 142, 245);
+    text-align: left;
+}
+
+.quote-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    text-align: left;
+    color: rgb(253, 240, 52);
+   
+}
+
+#inlineFormInput {
+    align-items: flex-start;
+}
