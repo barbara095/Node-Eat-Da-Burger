@@ -7,4 +7,4 @@ VALUES
 ("Spice me up", 0), 
 ("Royale with cheese", 1), 
 ("Bacon-me-Crazy", 0), 
-("Vego please", 1);
+("Vego please", 0);
