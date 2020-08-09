@@ -1,10 +1,10 @@
 INSERT INTO burgers (burger_name, devoured) 
 VALUES 
-("Classic cheese", TRUE), 
-("Double beef", FALSE), 
-("Chicka-licking-good", FALSE), 
-("The Texan", TRUE), 
-("Spice me up", FALSE), 
-("Royale with cheese", TRUE), 
-("Bacon-me-Crazy", TRUE), 
-("Vego please", TRUE);
+("Classic cheese", 1), 
+("Double beef", 0), 
+("Chicka-licking-good", 0), 
+("The Texan", 1), 
+("Spice me up", 0), 
+("Royale with cheese", 1), 
+("Bacon-me-Crazy", 0), 
+("Vego please", 1);
