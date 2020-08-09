@@ -1,9 +1,7 @@
-CREATE DATABASE burgers_db;
-
-USE burgers_db;
+USE ppheh43iaics6qe2;
 
 CREATE TABLE burgers (
-    id INTO NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     burger_name VARCHAR(35) NOT NULL,
     devoured BOOLEAN,
     PRIMARY KEY (id)
