@@ -14,7 +14,7 @@
           <div class="form-row align-items-center">
             <div class="col-auto">
               <label class="sr-only" for="inlineFormInput">Burger</label>
-              <input type="text" class="form-control mb-5" id="inlineFormInput" placeholder="Add a burger to the menu...">
+              <input type="text" id="inlineFormInput" name="burger" placeholder="Add a burger...">
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-success ml-5 mb-5">Add!</button>
@@ -35,7 +35,7 @@
           <ul class="d-inline">
             {{#each burgers}}
             {{#unless devoured}}
-            <li>{{this.burger_name}} <button class="btn btn-warning eat-burger" data-id="{{id}}" data-devoured="{{devoured}}">EAT!</button></li>
+            <li>{{this.burger_name}} <button type="button" class="btn btn-warning eat-burger" data-id="{{this.id}}" data-devoured="{{devoured}}">DEVOUR IT!</button></li>
             <hr>
             {{/unless}}
             {{/each}}
@@ -52,7 +52,7 @@
           <ul class="d-inline">
             {{#each burgers}}
                 {{#if devoured}}
-            <li>{{this.burger_name}} <button class="btn btn-danger delete-burger" data-id="{{id}}"><i class="fa fa-trash"></i></button></li>
+            <li>{{this.burger_name}} <button class="btn btn-danger delete-burger" data-id="{{this.id}}" data-devoured="{{devoured}}"><i class="fa fa-trash"></i></button></li>
             <hr>
                 {{/if}}
             {{/each}}

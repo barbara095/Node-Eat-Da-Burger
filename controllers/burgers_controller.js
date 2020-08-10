@@ -30,7 +30,7 @@ router.put("/api/burgers:id", function(req,res) {
     
     console.log("condition", condition);
 
-    burgers.update(
+    burger.update(
         {
         devoured: req.body.devoured
     }, 
@@ -48,7 +48,7 @@ router.delete("/api/burgers/:id", function(req,res) {
     
     console.log("condition", condition);
 
-    burgers.delete(condition, function(result) {
+    burger.delete(condition, function(result) {
         if (result.affectedRows == 0) {
             return res.status(404).end();
         } else {

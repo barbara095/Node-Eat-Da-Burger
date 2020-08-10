@@ -1,5 +1,6 @@
-.body {
-    cursor: url("https://illustoon.com/photo/4728.png");
+body {
+    background-color: rgb(17, 46, 131);
+    color: #fff;
 }
 
 .jumbotron {
@@ -23,8 +24,4 @@
     text-align: left;
     color: rgb(253, 240, 52);
    
-}
-
-#inlineFormInput {
-    align-items: flex-start;
 }
