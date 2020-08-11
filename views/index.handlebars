@@ -8,16 +8,15 @@
             <div class="col-sm-12 quote-title">
             <h3>“Man who invented the Hamburger was smart; Man who invented the Cheeseburger was a genius.” - Matthew McConaughey</h3>
           </div>
-          <div class="col-xs-6 col-sm-6">
         </div>
         <form class="create-form">
           <div class="form-row align-items-center">
             <div class="col-auto">
               <label class="sr-only" for="inlineFormInput">Burger</label>
               <input type="text" id="inlineFormInput" name="burger" placeholder="Add a burger...">
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-success ml-5 mb-5">Add!</button>
+    
+              <button type="submit" class="btn btn-success">Add!</button>
+              
             </div>
           </div>
         </form>
@@ -35,7 +34,7 @@
           <ul class="d-inline">
             {{#each burgers}}
             {{#unless devoured}}
-            <li>{{this.burger_name}} <button type="button" class="btn btn-warning eat-burger" data-id="{{this.id}}" data-devoured="{{devoured}}">DEVOUR IT!</button></li>
+            <li>{{this.burger_name}} <button class="btn btn-warning eat-burger" data-id="{{this.id}}" data-newDevoured="{{devoured}}">DEVOUR IT!</button></li>
             <hr>
             {{/unless}}
             {{/each}}

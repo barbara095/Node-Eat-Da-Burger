@@ -11,6 +11,21 @@ body {
     padding-top: 15%;
 }
 
+.btn-success {
+    background-color: rgb(224, 109, 73);
+    border: seashell;
+}
+
+.btn-success:hover {
+    background-color: rgb(110, 57, 40);
+    border: seashell;
+}
+
+.btn-success:active {
+    background-color: rgb(136, 161, 168);
+    border: seashell;
+}
+
 .burger-title {
     font-family: 'Fredoka One', cursive;
     font-size: 65px;
