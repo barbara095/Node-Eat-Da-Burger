@@ -2,11 +2,12 @@
 
 $(function () {
     // Adding event listener to change devoured state
-    $('eat-burger').on('click', function (event) {
+    $('chomp-burger').on('click', function (event) {
       var id = $(this).data('id');
+      var devour = 1;
     //   var newDevour = $(this).data('newDevoured');
       var newDevState = {
-        devoured: 1
+        devoured: devour
       };
       // Send the PUT request.
       $.ajax('/api/burgers/' + id, {

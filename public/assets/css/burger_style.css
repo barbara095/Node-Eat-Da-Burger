@@ -40,3 +40,8 @@ body {
     color: rgb(253, 240, 52);
    
 }
+
+#burger-img {
+    width: 24px;
+    height: 24px;
+}
